@@ -14,12 +14,17 @@
       "use strict";
 
       // fruit Processor
+      //       Write a function called fruitProcessor that takes apples and oranges, and returns a string like:
+      //  "Juice with 3 apples and 5 oranges."
+
       const fruitProcessor = function (apples, oranges) {
         return `juice with ${apples} apples and ${oranges} oranges.`;
       };
       console.log(fruitProcessor(3, 5));
 
       // Temperature Converter
+      //       Write a function that converts Celsius to Fahrenheit:
+      // Formula: F = C * 9/5 + 32
       let C = "celsius";
       let F = "fahrenheit";
       const tempConverter = function (C) {
@@ -29,6 +34,8 @@
       console.log(tempConverter(70));
 
       // Loop Logger
+
+      // Using a for loop, log every number from 1 to 20. If the number is even, log "Even", if odd, log "Odd".
       for (let i = 1; i < 21; i++) {
         if (i % 2) {
           console.log(`${i} is Odd!`);
@@ -38,6 +45,7 @@
       }
 
       //Array Reverse
+      // Write a function that takes an array and logs the elements in reverse order.
 
       const reverseArr = function () {
         const num = [8, 10, 23, 88, 44, 12];
