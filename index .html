@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Practice</title>
+  </head>
+  <body>
+    <h1 style="width: 20px; color: yellowgreen; font-size: 40px">
+      Personal Challenges
+    </h1>
+
+    <script>
+      "use strict";
+
+      // fruit Processor
+      const fruitProcessor = function (apples, oranges) {
+        return `juice with ${apples} apples and ${oranges} oranges.`;
+      };
+      console.log(fruitProcessor(3, 5));
+
+      // Temperature Converter
+      let C = "celsius";
+      let F = "fahrenheit";
+      const tempConverter = function (C) {
+        let celsiusToFahrenheit = (F = (C * 9) / 5 + 32);
+        return celsiusToFahrenheit;
+      };
+      console.log(tempConverter(70));
+
+      // Loop Logger
+      for (let i = 1; i < 21; i++) {
+        if (i % 2) {
+          console.log(`${i} is Odd!`);
+        } else {
+          console.log(`${i} is Even!`);
+        }
+      }
+
+      //Array Reverse
+
+      const reverseArr = function () {
+        const num = [8, 10, 23, 88, 44, 12];
+        for (let i = num.length - 1; i >= 0; i--) {
+          console.log(num[i]);
+        }
+      };
+
+      reverseArr();
+    </script>
+  </body>
+</html>
