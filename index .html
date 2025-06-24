@@ -53,8 +53,33 @@
           console.log(num[i]);
         }
       };
-
       reverseArr();
+
+      // Average score
+      const teamA = [4, 8, 10, 6, 7];
+      const teamB = [5, 9, 10, 8, 5];
+
+      const calcScore = function (teamA, teamB) {
+        const calcAverage = function (team) {
+          let total = 0;
+          for (let i = 0; i < team.length; i++) {
+            total += team[i];
+          }
+          return total / team.length;
+        };
+        const avgA = calcAverage(teamA);
+        const avgB = calcAverage(teamB);
+
+        console.log("Team A average:", avgA.toFixed(1));
+        console.log("Team B average:", avgB.toFixed(2));
+
+        if (teamA > teamB) {
+          console.log(`Team A won with an average of ${avgA}`);
+        } else {
+          console.log(`Team B won with an average of ${avgB}`);
+        }
+      };
+      console.log(calcScore(teamA, teamB));
     </script>
   </body>
 </html>
