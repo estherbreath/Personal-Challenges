@@ -14,7 +14,8 @@
       "use strict";
 
       // fruit Processor
-      //       Write a function called fruitProcessor that takes apples and oranges, and returns a string like:
+      //  Write a function called fruitProcessor that takes apples and oranges,
+      //  and returns a string like:
       //  "Juice with 3 apples and 5 oranges."
 
       const fruitProcessor = function (apples, oranges) {
@@ -35,7 +36,8 @@
 
       // Loop Logger
 
-      // Using a for loop, log every number from 1 to 20. If the number is even, log "Even", if odd, log "Odd".
+      // Using a for loop, log every number from 1 to 20. If the number is even,
+      // log "Even", if odd, log "Odd".
       for (let i = 1; i < 21; i++) {
         if (i % 2) {
           console.log(`${i} is Odd!`);
@@ -56,6 +58,9 @@
       reverseArr();
 
       // Average score
+      // Create two arrays representing the scores of Team A and Team B.
+      //  Write a function to calculate
+      //  the average and print the winner (team with the highest average).
       const teamA = [4, 8, 10, 6, 7];
       const teamB = [5, 9, 10, 8, 5];
 
@@ -82,6 +87,9 @@
       calcScore(teamA, teamB);
 
       // object practice
+      // Create an object called student with properties: name, age, scores (array),
+      //  and a method to calculate average score.
+
       const student = {
         name: "Bose",
         age: 14,
@@ -97,6 +105,32 @@
       };
 
       console.log(student.avgScore());
+
+      // Loops Inside Loops
+
+      // Print this pattern using nested loops:
+
+      // 1
+      // 22
+      // 333
+      // 4444
+      // 55555
+
+      // let n = (1, 22, 333, 4444, 55555);
+      for (let i = 1; i <= 5; i++) {
+        let row = "";
+        for (let j = 1; j <= i; j++) {
+          row += i;
+        }
+        console.log(row);
+      }
+
+      for (let i = 1; i <= 3; i++) {
+        console.log(`${i} I can code`);
+        for (let n = 1; n <= 5; n++) {
+          console.log(`  ${n} You can bet on it!`);
+        }
+      }
     </script>
   </body>
 </html>
