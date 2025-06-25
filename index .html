@@ -79,7 +79,24 @@
           console.log(`Team B won with an average of ${avgB}`);
         }
       };
-      console.log(calcScore(teamA, teamB));
+      calcScore(teamA, teamB);
+
+      // object practice
+      const student = {
+        name: "Bose",
+        age: 14,
+        score: [4, 8, 10, 6, 7],
+
+        avgScore: function () {
+          let total = 0;
+          for (let i = 0; i < this.score.length; i++) {
+            total += this.score[i];
+          }
+          return total / this.score.length;
+        },
+      };
+
+      console.log(student.avgScore());
     </script>
   </body>
 </html>
